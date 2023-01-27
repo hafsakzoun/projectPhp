@@ -494,20 +494,6 @@ header .fa-bars{
     color:var(--yallow);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* media queries  */
 @media (max-width:991px){
     
@@ -614,3 +600,59 @@ header .fa-bars{
         }
 
 }
+
+    .navbar-nav
+    {
+        font-size: 2rem;
+        padding:0 1.5rem;
+        position: absolute;
+        left:70%;
+        
+    }
+
+
+    .nav-link:hover
+    {
+        color:var(--yallow);
+    }
+
+    header .navbar-nav a:hover{
+        color:var(--yallow);
+    }
+    .dropdown-menu>li:hover>.submenu {
+        display: block;
+    }
+
+
+    @media screen and (min-width: 993px) {
+    .dropdown:hover .drop
+    {
+        display:block !important;
+    }
+    .dropdown:focus .drop
+    {
+        display:block !important;
+    }
+    .dropdown .drop.show
+    {
+        display:none !important;
+    }
+
+    }
+
+    /* add-cat*/
+    .add-cat
+    {
+
+        position: absolute;
+        top: 90px;
+        left: 20%;
+        right: 20%;
+    }
+
+    
+
+    /*cart css*/
+
+
+

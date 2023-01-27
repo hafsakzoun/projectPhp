@@ -15,59 +15,48 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 
     <style type="text/css">
+        a{
+            text-decoration: none;
+        }
+        .logo:hover{
+            color:var(--yallow);
+        }
 
-    a{
-        text-decoration: none;
-    }
-    .logo:hover{
-        color:var(--yallow);
-    }
+        .btn{
+            display: inline-block;
+            margin-top: 1rem;
+            border-radius: 5rem;
+            background:#333;
+            color:#fff;
+            padding:.9rem 3.5rem;
+            cursor: pointer;
+            font-size: 1.7rem;
+        }
 
-    .btn{
-        display: inline-block;
-        margin-top: 1rem;
-        border-radius: 5rem;
-        background:#333;
-        color:#fff;
-        padding:.9rem 3.5rem;
-        cursor: pointer;
-        font-size: 1.7rem;
-    }
-
-    .dropdown-menu li {
-        position: relative;
-    }          
-
-    .dropdown-menu .submenu {
-        display: none;
-        position: absolute;
-        left: 100%;
-        top: -7px;
-    }
-
-    .dropdown-menu>li:hover>.submenu {
-        display: block;
-    }
-
-    @media screen and (min-width: 993px) {
-    .dropdown:hover .drop
-    {
-        display:block !important;
-    }
-    .dropdown:focus .drop
-    {
-        display:block !important;
-    }
-    .dropdown .drop.show
-    {
-        display:none !important;
-    }
-
-    }
+        .dropdown-menu li {
+            position:relative;
+        } 
+        
+        .navbar-nav 
+        {
+            position: absolute;
+            top:28%;
+        }
+        .nav-link
+        {
+            color:#666;
+        }
+        .dropdown-menu .submenu {
+            display: none;
+            position: absolute;
+            left: 100%;
+            top: -7px;
+        }
+ 
     </style>
 </head>
 <body>
-    <!-- header section starts  -->
+    <!-- header section starts  -->;
 <header>
 
 <input type="checkbox" name="" id="toggler">
@@ -80,14 +69,13 @@
     <a href="#about">about</a>
     <a href="#products">products</a>
     <a href="#review">review</a>
-    <a href="#contact">contact</a>
-    <a href="/categories" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" >categories</a>
-    
-                    <ul class="navbar-nav">
-                        <li class="nav-item dropdown">
-                            <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Categories</a>
-                            <ul class="dropdown-menu drop">
-                                <li><a href="" class="dropdown-item">Sofas and armchairs &raquo;</a>
+    <a href="#contact">contact</a>                
+</nav>
+<ul class="navbar-nav">
+                        <li class="nav-item dropdown ">
+                            <a href="/categories" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Categories</a>
+                            <ul class="dropdown-menu drop ">
+                                <li><a href="/sofas&armchairs" class="dropdown-item">Sofas and armchairs &raquo;</a>
                                     <ul class="dropdown-menu submenu">
                                         <li><a href="" class="dropdown-item">Sofas</a></li>
                                         <li><a href="" class="dropdown-item">Armchairs</a></li>
@@ -95,7 +83,7 @@
                                         <li><a hrfe="" class="dropdown-item">Chaise longues</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="" class="dropdown-item">Tables and chairs &raquo;</a>
+                                <li><a href="/tables&chairs" class="dropdown-item ">Tables and chairs &raquo;</a>
                                     <ul class="dropdown-menu submenu">
                                         <li><a href="" class="dropdown-item">Chairs</a></li>
                                         <li><a href="" class="dropdown-item">Stools</a></li>
@@ -105,8 +93,8 @@
                                         <li><a href="" class="dropdown-item">Secretary desks</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="" class="dropdown-item">Storage systems and units &raquo;</a>
-                                    <ul class="dropdown-menu submenu">
+                                <li><a href="/storagesys&units" class="dropdown-item ">Storage systems and units &raquo;</a>
+                                    <ul class="dropdown-menu  submenu">
                                         <li><a href="" class="dropdown-item">Bookcases</a></li>
                                         <li><a href="" class="dropdown-item">Storage walls</a></li>
                                         <li><a href="" class="dropdown-item">TV cabinets</a></li>
@@ -116,7 +104,7 @@
                                         <li><a href="" class="dropdown-item">Wall cabinets</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="" class="dropdown-item">Sleeping area and children's bedrooms &raquo;</a>
+                                <li><a href="" class="dropdown-item ">Sleeping area and children's bedrooms &raquo;</a>
                                     <ul class="dropdown-menu submenu">
                                         <li><a href="" class="dropdown-item">Beds</a></li>
                                         <li><a href="" class="dropdown-item">Bedside tables</a></li>
@@ -127,7 +115,7 @@
 
                                     </ul>
                                 </li>
-                                <li><a href="" class="dropdown-item">Kids furniture Furniture components and hardware  &raquo;</a>
+                                <li><a href="" class="dropdown-item ">Kids furniture Furniture components and hardware  &raquo;</a>
                                     <ul class="dropdown-menu submenu">
                                         <li><a href="" class="dropdown-item">Kids bedroom</a></li>
                                         <li><a href="" class="dropdown-item">Kids bedrooms accessories</a></li>
@@ -150,13 +138,9 @@
                             </ul>
                         </li>
                     </ul>
-
-
-</nav>
-
 <div class="icons">
     <a href="#" class="fas fa-heart"></a>
-    <a href="#" class="fas fa-shopping-cart"></a>
+    <a href="/cart" class="fas fa-shopping-cart"></a>
     <a href="#" class="fas fa-user"></a>
 </div>
 

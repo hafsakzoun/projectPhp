@@ -33,6 +33,28 @@
                 
             </div>
         </div>
+        <div class="box">
+            
+            <div class="image">
+                <img src="images/stools.jpg" alt="">
+               
+            </div>
+            <div class="content">
+                <h3>Stools</h3>
+                
+            </div>
+        </div>
+        <div class="box">
+            
+            <div class="image">
+                <img src="images/indoorBenches.jpg" alt="">
+               
+            </div>
+            <div class="content">
+                <h3>Indoor Benches</h3>
+                
+            </div>
+        </div>
 
         
 
