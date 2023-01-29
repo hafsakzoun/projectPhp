@@ -52,6 +52,7 @@ width: 50px;
 background-color: #FFC312;
 color: black;
 border:0 !important;
+border-radius: 2px;
 }
 
 input:focus{
@@ -62,7 +63,9 @@ box-shadow: 0 0 0 0 !important;
 
 .remember{
 color: white;
-
+display:flex;
+gap:2rem;
+justify-items: center;
 }
 
 .remember input
@@ -79,13 +82,13 @@ margin-right: 5px; */
 text-align:center;
 }
 
-.login_btn{
+.login_btn,.regestre_btn{
 color: black!important;
 background-color: #FFC312!important;
 width: 100px;
 }
 
-.login_btn:hover{
+.login_btn,.regestre_btn:hover{
 color: black!important;
 background-color: white!important;
 }
