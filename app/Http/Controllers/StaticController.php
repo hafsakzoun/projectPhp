@@ -31,5 +31,8 @@ class StaticController extends Controller
     public function admin(){
         return view('admin.index'); 
     }
+    public function user(){
+        return view('user'); 
+    }
 
 }
