@@ -1,5 +1,5 @@
 @extends('admin.admina')
-
+@section('title','categories')
 @section('content')
         <div class="card">
             <div class="card-body">

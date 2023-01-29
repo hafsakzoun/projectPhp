@@ -34,7 +34,7 @@ class CategoryController extends Controller
        $category->meta_keywords = $request->input('meta_keywords');
        $category->meta_descrip = $request->input('meta_description');
        $category->save();
-       return redirect('/main')->with('status',"Category Added Successfuly");
+       return redirect('/dashboard')->with('status',"Category Added Successfuly");
     } 
     public function storagesysunits(){
         return view('layouts.storagesys&units');

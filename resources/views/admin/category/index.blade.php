@@ -1,5 +1,9 @@
-@extends('layouts.admin')
+@extends('admin.admina')
 @section('title','categories')
 @section('content')
-<!-- code for categories page-->
+        <div class="card">
+            <div class="card-body">
+                <h1>Category Page</h1>
+            </div>
+        </div>
 @endsection
