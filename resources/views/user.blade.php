@@ -23,7 +23,7 @@
 <a href="#" class="logo">  dear client {{ Auth::user()->name }}<span>.</span></a>
 
 <nav class="navbar">
-    <a href="/home">home</a>
+    <a href="#">home</a>
     <!-- <a href="#about">about</a> -->
     <a href="#products">products</a>
     <a href="#review">review</a>
@@ -40,7 +40,6 @@
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
-
 <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">@csrf</form>
 </div>
 

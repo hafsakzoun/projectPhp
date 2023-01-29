@@ -46,7 +46,7 @@
 		</div>
 		<div class="remember">
             
-            <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}><p>Remember Me</p>
+            <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}><p></p>Remember Me</p>
             <!-- <label class="form-check-label" for="remember">
                                         {{ __('Remember Me') }}
             </label> -->
