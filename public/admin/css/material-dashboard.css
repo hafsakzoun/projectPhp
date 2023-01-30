@@ -11759,7 +11759,7 @@ fieldset[disabled] .form-group.is-focused .form-check .form-check-label {
   vertical-align: middle;
   position: relative;
   top: -2px;
-  float: left;
+  float:left;
   padding-right: 10px;
   display: inline-block;
 }
@@ -16675,7 +16675,7 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
 }
 
 .fixed-plugin .adjustments-line p {
-  float: left;
+  float:left;
   display: inline-block;
   margin-bottom: 0;
   font-size: 1em;
