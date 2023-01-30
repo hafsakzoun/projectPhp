@@ -81,10 +81,10 @@
                             <ul class="dropdown-menu drop ">
                                 <li><a href="/sofas&armchairs" class="dropdown-item">Sofas and armchairs &raquo;</a>
                                     <ul class="dropdown-menu submenu">
-                                        <li><a href="" class="dropdown-item">Sofas</a></li>
-                                        <li><a href="" class="dropdown-item">Armchairs</a></li>
-                                        <li><a href="" class="dropdown-item">Easy chairs</a></li>
-                                        <li><a hrfe="" class="dropdown-item">Chaise longues</a></li>
+                                        <li><a href="/sofas" class="dropdown-item">Sofas</a></li>
+                                        <li><a href="/armchairs" class="dropdown-item">Armchairs</a></li>
+                                        <li><a href="/easychairs" class="dropdown-item">Easy chairs</a></li>
+                                        <li><a href="/chaiselongues" class="dropdown-item">Chaise longues</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="/tables&chairs" class="dropdown-item ">Tables and chairs &raquo;</a>

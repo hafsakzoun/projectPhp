@@ -21,6 +21,7 @@ class CreateProductsTable extends Migration
             $table->string('image');
             $table->timestamps();
             $table->bigInteger('cate_id');
+            
         });
     }
 

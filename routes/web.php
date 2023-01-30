@@ -36,6 +36,11 @@ Route::get('/sofas&armchairs','Admin\CategoryController@sofasarmchairs');
 Route::get('/tables&chairs','Admin\CategoryController@tableschairs');
 Route::get('wishlist',[WishlistController::class,'index']);
 Route::get('products',[ProductController::class,'productList']);
+Route::get('sofas',[ProductController::class,'sofaslist']);
+Route::get('armchairs',[ProductController::class,'armchairslist']);
+Route::get('easychairs',[ProductController::class,'easychairslist']);
+Route::get('chaiselongues',[ProductController::class,'chaiselongueslist']);
+
 /*added by iman D*/
 Route::get('cart', [CartController::class, 'cartList'])->name('cart.list');
 Route::post('cart', [CartController::class, 'addToCart'])->name('cart.store');

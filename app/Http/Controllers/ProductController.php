@@ -13,5 +13,30 @@ class ProductController extends Controller
 
         return view('Admin.products.productList',compact('products'));
     }
+    public function sofaslist()
+    {
+        $products = Product::all();
+
+        return view('layouts.sofasandarmchairs.sofas');
+    }
+    public function armchairslist()
+    {
+        $products = Product::all();
+
+        return view('layouts.sofasandarmchairs.armchairs');
+    }
+    public function easychairslist()
+    {
+        $products = Product::all();
+
+        return view('layouts.sofasandarmchairs.easychairs');
+    }
+
+    public function chaiselongueslist()
+    {
+        $products = Product::all();
+
+        return view('layouts.sofasandarmchairs.chaiseslongues');
+    }
 } 
 
