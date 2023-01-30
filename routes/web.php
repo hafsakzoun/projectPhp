@@ -37,7 +37,6 @@ Route::get('/tables&chairs','Admin\CategoryController@tableschairs');
 Route::get('wishlist',[WishlistController::class,'index']);
 Route::get('products',[ProductController::class,'productList']);
 /*added by iman D*/
-Route::get('/', [ProductController::class, 'productList'])->name('products.list');
 Route::get('cart', [CartController::class, 'cartList'])->name('cart.list');
 Route::post('cart', [CartController::class, 'addToCart'])->name('cart.store');
 Route::post('update-cart', [CartController::class, 'updateCart'])->name('cart.update');
