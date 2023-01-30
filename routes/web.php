@@ -53,4 +53,9 @@ Route::middleware(['auth'])->group(function () {
             return view('user');
         }
     });
+
+    Route::get('/dashboard','Admin\FrontendController@index');
+    Route::get('/categories','Admin\CategoryController@index');
+    Route::get('/add-category','Admin\CategoryController@add');
+    Route::post('/insert-category','Admin\CategoryController@insert');
 });

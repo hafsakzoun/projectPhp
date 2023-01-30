@@ -15163,6 +15163,7 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
   top: 0;
   bottom: 0;
   left: 0;
+  background-color: grey;
   z-index: 2;
   width: 260px;
   background: #fff;
@@ -15344,6 +15345,7 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
   padding-right: 10px;
   text-transform: capitalize;
   font-size: 13px;
+  font-weight: bold;
   padding: 10px 15px;
 }
 
@@ -15375,7 +15377,7 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
   margin: 0;
   display: block;
   position: relative;
-  z-index: 4;
+  z-index: 10;
 }
 
 .sidebar .logo:after {
