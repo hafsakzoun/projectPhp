@@ -46,6 +46,11 @@ Route::post('clear', [CartController::class, 'clearAllCart'])->name('cart.clear'
 Route::get('/home',[StaticController::class , 'home']);
 Route::get('/user',[StaticController::class , 'user']);
 Route::get('/login',[StaticController::class , 'login']);
+/* changed \ by / */
+Route::get('/dashboard','Admin\FrontendController@index');
+Route::get('categories','Admin\CategoryController@index');
+Route::get('add-category','Admin\CategoryController@add');
+Route::post('insert-category','Admin\CategoryController@insert');
 Auth::routes();
 
 //Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
@@ -58,10 +63,6 @@ Route::middleware(['auth'])->group(function () {
             return view('user');
         }
     });
-/* changed \ by / */
-    Route::get('/dashboard','Admin\FrontendController@index');
-    Route::get('categories','Admin\CategoryController@index');
-    Route::get('add-category','Admin\CategoryController@add');
-    Route::post('insert-category','Admin\CategoryController@insert');
 });
+
 
