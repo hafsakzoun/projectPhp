@@ -71,7 +71,7 @@
 <nav class="navbar">
     <a href="/home">home</a>
     <a href="#about">about</a>
-    <a href="#products">products</a>
+    <a href="/products">products</a>
     <a href="#review">review</a>
     <a href="#contact">contact</a>                
 </nav>
@@ -143,7 +143,7 @@
                         </li>
                     </ul>
 <div class="icons">
-    <a href="#" class="fas fa-heart"></a>
+    <a href="/wishlist" class="fas fa-heart"></a>
     <a href="/cart" class="fas fa-shopping-cart"></a>
     <a href="/login" class="fas fa-user"></a>
                                         

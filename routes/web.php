@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\StaticController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\wishlistController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -32,23 +34,12 @@ Route::post('insert-category','Admin\CategoryController@insert');
 Route::get('/storagesys&units','Admin\CategoryController@storagesysunits');
 Route::get('/sofas&armchairs','Admin\CategoryController@sofasarmchairs');
 Route::get('/tables&chairs','Admin\CategoryController@tableschairs');
+Route::get('wishlist',[WishlistController::class,'index']);
+Route::get('products',[ProductController::class,'productList']);
 /*added by iman D*/
+Route::get('/', [ProductController::class, 'productList'])->name('products.list');
 Route::get('cart', [CartController::class, 'cartList'])->name('cart.list');
 Route::post('cart', [CartController::class, 'addToCart'])->name('cart.store');
 Route::post('update-cart', [CartController::class, 'updateCart'])->name('cart.update');
 Route::post('remove', [CartController::class, 'removeCart'])->name('cart.remove');
 Route::post('clear', [CartController::class, 'clearAllCart'])->name('cart.clear');
-Route::get('/home',[StaticController::class , 'home']);
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Auth::routes();
-Route::middleware(['auth'])->group(function () {
-    Route::get('/dashboard', function () {
-        if(Auth::user()->role_as == '1'){
-            return view('admin.index');
-        }elseif(Auth::user()->role_as == '0'){
-            return view('user');
-        }
-    });
-});
