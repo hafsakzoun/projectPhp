@@ -38,3 +38,10 @@ Route::post('cart', [CartController::class, 'addToCart'])->name('cart.store');
 Route::post('update-cart', [CartController::class, 'updateCart'])->name('cart.update');
 Route::post('remove', [CartController::class, 'removeCart'])->name('cart.remove');
 Route::post('clear', [CartController::class, 'clearAllCart'])->name('cart.clear');
+/*added by ferdaous */
+Route::get('add-products' , [ProductController::class,'add']);
+Route::get('edit-products/{id}' , [ProductController::class,'edit']);
+Route::post('update-product' , [ProductController::class,'update']);
+Route::post('save-product' , [ProductController::class,'save']);
+Route::get('/list' , [ProductController::class,'index']);
+Route::get('delet-products' , [ProductController::class,'destroy']);
