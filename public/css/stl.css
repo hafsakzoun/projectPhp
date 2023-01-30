@@ -314,7 +314,19 @@ header .fa-bars{
 .products .box-container .box .image .icons a:hover{
     background:#333;
 }
-
+/*yas*/
+.products .box-container .box .image .icons button:hover{
+    background:#333;
+}
+.products .box-container .box .image .icons button{
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    width:50%;
+    background:var(--yallow);
+    color:#fff;
+}
+/*yas*/
 .products .box-container .box .content{
     padding:2rem;
     text-align: center;

@@ -23,10 +23,10 @@ class CategoryController extends Controller
         $file = $request->file('image');
         $ext = $file->getClientOriginalExtension();
         $filename = time().'.'.$ext;
-        $file->move('assets/uploads/category'.$filename);
+        $file->move('assets/uploads/category',$filename);
         $category->image = $filename;
        }
-       $category->name = $request->input('names');
+       $category->name = $request->input('name');
        $category->slug = $request->input('slug');
        $category->description = $request->input('description');
        $category->status = $request->input('status') == TRUE ? '1':'0';
