@@ -1,4 +1,4 @@
-@extends('layouts.admin')
+@extends('layouts.tempUser')
 @section('title','home')
 @section('content')
 <!-- home section starts  -->

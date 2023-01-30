@@ -16,9 +16,9 @@
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="./user.html">
+            <a class="nav-link" href="/categories">
               <i class="material-icons">person</i>
-              <p>User Profile</p>
+              <p>categories</p>
             </a>
           </li>
           <li class="nav-item ">
