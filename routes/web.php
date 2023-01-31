@@ -5,6 +5,7 @@ use App\Http\Controllers\StaticController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\wishlistController;
+use App\Http\Controllers\Admin\CategoryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,21 +26,14 @@ Route::get('/',function()
 });
 Route::get('/home', function () {
     return view('layouts.main');
-});
-Route::get('/dashboard','Admin\FrontendController@index');
-Route::get('/categories','Admin\CategoryController@index');
-Route::get('/add-category','Admin\CategoryController@add');
-Route::post('insert-category','Admin\CategoryController@insert');
+});  
 /* added by yasmina*/
 Route::get('/storagesys&units','Admin\CategoryController@storagesysunits');
 Route::get('/sofas&armchairs','Admin\CategoryController@sofasarmchairs');
 Route::get('/tables&chairs','Admin\CategoryController@tableschairs');
 Route::get('wishlist',[WishlistController::class,'index']);
 Route::get('products',[ProductController::class,'productList']);
-Route::get('sofas',[ProductController::class,'sofaslist']);
-Route::get('armchairs',[ProductController::class,'armchairslist']);
-Route::get('easychairs',[ProductController::class,'easychairslist']);
-Route::get('chaiselongues',[ProductController::class,'chaiselongueslist']);
+
 
 /*added by iman D*/
 Route::get('cart', [CartController::class, 'cartList'])->name('cart.list');
@@ -63,10 +57,28 @@ Route::middleware(['auth'])->group(function () {
             return view('user');
         }
     });
-/* changed \ by / */
-    Route::get('/dashboard','Admin\FrontendController@index');
-    Route::get('categories','Admin\CategoryController@index');
-    Route::get('add-category','Admin\CategoryController@add');
-    Route::post('insert-category','Admin\CategoryController@insert');
-});
+/* added by hafsa */
+    Route::get('/dashboard','Admin/FrontendController@index');
+    Route::get('categories','Admin/CategoryController@index');
+    Route::get('add-category','Admin/CategoryController@add');
+    Route::post('insert-category','Admin/CategoryController@insert');
+    Route::get('edit-prod/{id}', [CategoryController::class ,'edit']);
+    Route::get('delete-category/{id}',[CategoryController::class, 'destroy']);
 
+
+});
+/*added by ferdaous*/
+Route::middleware(['auth','isAdmin'])->group(function(){
+    Route::get('/dashboard','Admin/ProductController@index');
+    Route::get('product','admin/ProductController@index');
+    Route::get('add-product','admin/ProductController@add');
+    Route::get('insert-product','admin\ProductController@insert');
+    Route::get('edit-product/{id}',[ProductController::class,'edit']);
+    Route::get('edit-product/{id}',[ProductController::class,'edit']);
+    Route::get('update-product/{id}',[ProductController::class,'update']);
+    Route::get('destroy-product/{id}',[ProductController::class,'destroy']);
+    //Route::get('product',ProductControler::class,'index');
+    Route::get('add-product',Productcontroler::class,'add');
+    Route::get('delete-product',Productcontroler::class,'delete');
+
+});

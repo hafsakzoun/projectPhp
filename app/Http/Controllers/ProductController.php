@@ -1,42 +1,17 @@
-<?php
+<!-- <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\ProductController;
 
 use App\Models\Product;
 use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
-    public function productList()
+    public function index()
     {
         $products = Product::all();
 
-        return view('Admin.products.productList',compact('products'));
-    }
-    public function sofaslist()
-    {
-        $products = Product::all();
-
-        return view('layouts.sofasandarmchairs.sofas');
-    }
-    public function armchairslist()
-    {
-        $products = Product::all();
-
-        return view('layouts.sofasandarmchairs.armchairs');
-    }
-    public function easychairslist()
-    {
-        $products = Product::all();
-
-        return view('layouts.sofasandarmchairs.easychairs');
+        return view('Admin.product.index',compact('products'));
     }
 
-    public function chaiselongueslist()
-    {
-        $products = Product::all();
-
-        return view('layouts.sofasandarmchairs.chaiseslongues');
-    }
-} 
 
