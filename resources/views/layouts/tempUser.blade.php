@@ -19,14 +19,7 @@
 
 
     <style type="text/css">
-        a{
-            text-decoration: none;
-        }
-        .logo:hover{
-            color:var(--yallow);
-        }
-
-        .btn{
+         .btn{
             display: inline-block;
             margin-top: 1rem;
             border-radius: 5rem;
@@ -36,6 +29,14 @@
             cursor: pointer;
             font-size: 1.7rem;
         }
+         a{
+            text-decoration: none;
+        }
+        .logo:hover{
+            color:var(--yallow);
+        }
+
+       
 
         .dropdown-menu li {
             position:relative;
@@ -50,6 +51,18 @@
         {
             color:#666;
         }
+        .dropdown-menu .submenu {
+            display: none;
+            position: absolute;
+            left: 100%;
+            top: -7px;
+        }
+        .navbar-nav 
+        {
+            position: absolute;
+            top:28%;
+        }
+        
         .dropdown-menu .submenu {
             display: none;
             position: absolute;
@@ -71,20 +84,20 @@
 <nav class="navbar">
     <a href="/home">home</a>
     <a href="#about">about</a>
-    <a href="/products">products</a>
+    <a href="#products">products</a>
     <a href="#review">review</a>
     <a href="#contact">contact</a>                
 </nav>
 <ul class="navbar-nav">
                         <li class="nav-item dropdown ">
-                            <a href="/categories" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Categories</a>
+                            <a href="/login" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Categories</a>
                             <ul class="dropdown-menu drop ">
                                 <li><a href="/sofas&armchairs" class="dropdown-item">Sofas and armchairs &raquo;</a>
                                     <ul class="dropdown-menu submenu">
-                                        <li><a href="" class="dropdown-item">Sofas</a></li>
-                                        <li><a href="" class="dropdown-item">Armchairs</a></li>
-                                        <li><a href="" class="dropdown-item">Easy chairs</a></li>
-                                        <li><a hrfe="" class="dropdown-item">Chaise longues</a></li>
+                                        <li><a href="/sofas" class="dropdown-item">Sofas</a></li>
+                                        <li><a href="/armchairs" class="dropdown-item">Armchairs</a></li>
+                                        <li><a href="/easychairs" class="dropdown-item">Easy chairs</a></li>
+                                        <li><a href="/chaiselongues" class="dropdown-item">Chaise longues</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="/tables&chairs" class="dropdown-item ">Tables and chairs &raquo;</a>
@@ -143,8 +156,8 @@
                         </li>
                     </ul>
 <div class="icons">
-    <a href="/wishlist" class="fas fa-heart"></a>
-    <a href="/cart" class="fas fa-shopping-cart"></a>
+    <a href="/login" class="fas fa-heart"></a>
+    <a href="/login" class="fas fa-shopping-cart"></a>
     <a href="/login" class="fas fa-user"></a>
                                         
 </div>

@@ -1,5 +1,5 @@
 @extends('layouts.main')
-@section('title','sofas and chairs')
+@section('title','home')
 @section('content')
 
 <section class="products" id="products">
@@ -10,7 +10,7 @@
     <h2 class="categoriem">Sofas and Armchairs</h2>
     <div class="box-container chaire">
 
-        <div class="box">
+        <a href="/sofas"><div class="box">
             
             <div class="image">
                 <img src="images/sofascat.jpg" alt="">
@@ -20,19 +20,20 @@
                 <h3>Sofas</h3>
                 
             </div>
-        </div>
+        </div></a>
 
-        <div class="box">
+        <a href="/armchairs"><div class="box">
             
             <div class="image">
                 <img src="images/chair2.jfif" alt="">
                
             </div>
             <div class="content">
-                <h3>Armchairs</h3>
+               <h3>Armchairs</h3>
                 
             </div>
-        </div>
+        </div> </a>
+        <a href="/easychairs">
         <div class="box">
             
             <div class="image">
@@ -43,8 +44,8 @@
                 <h3>Easy Chairs</h3>
                 
             </div>
-        </div>
-        <div class="box">
+        </div></a>
+       <a href="/chaiselongues"><div class="box">
             
             <div class="image">
                 <img src="images/chaiselongue.jpg" alt="">
@@ -54,7 +55,7 @@
                 <h3>Chaise longues</h3>
                 
             </div>
-        </div>
+        </div></a> 
 
 </section>
 

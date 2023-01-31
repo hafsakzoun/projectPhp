@@ -13,5 +13,4 @@ class ProductController extends Controller
 
         return view('Admin.product.index',compact('products'));
     }
-}  
-
+}

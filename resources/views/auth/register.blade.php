@@ -66,7 +66,7 @@
                             
 
             <div class="input-group form-group">
-                <label for="password-confirm" class="col-md-4 col-form-label text-md-end">{{ __('Confirm') }}</label>
+                <label for="password-confirm" class="col-md-4 col-form-label text-md-end">{{ __('Confirm password') }}</label>
 
                             
                 <div class="input-group-prepend">

@@ -11,6 +11,52 @@
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="/css/stl.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
+    <style type="text/css">
+        
+        .navbar-nav 
+        {
+            position: absolute;
+            top:28%;
+        }
+        
+        .dropdown-menu .submenu {
+            display: none;
+            position: absolute;
+            left: 100%;
+            top: -7px;
+        }
+        a{
+            text-decoration: none;
+        }
+        .logo:hover{
+            color:var(--yallow);
+        }
+
+       
+
+        .dropdown-menu li {
+            position:relative;
+        } 
+        
+        .navbar-nav 
+        {
+            position: absolute;
+            top:28%;
+        }
+        .nav-link
+        {
+            color:#666;
+        }
+        .dropdown-menu .submenu {
+            display: none;
+            position: absolute;
+            left: 100%;
+            top: -7px;
+        }
+ 
+    </style>
 
 </head>
 <body>
@@ -28,9 +74,74 @@
     <a href="#products">products</a>
     <a href="#review">review</a>
     <!-- <a href="#contact">contact</a> -->
-    <a href="admin/category/index">categories</a>
-</nav>
+    </nav>
+<ul class="navbar-nav">
+                        <li class="nav-item dropdown ">
+                            <a href="/login" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Categories</a>
+                            <ul class="dropdown-menu drop ">
+                                <li><a href="/sofas&armchairs" class="dropdown-item">Sofas and armchairs &raquo;</a>
+                                    <ul class="dropdown-menu submenu">
+                                        <li><a href="" class="dropdown-item">Sofas</a></li>
+                                        <li><a href="" class="dropdown-item">Armchairs</a></li>
+                                        <li><a href="" class="dropdown-item">Easy chairs</a></li>
+                                        <li><a hrfe="" class="dropdown-item">Chaise longues</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="/tables&chairs" class="dropdown-item ">Tables and chairs &raquo;</a>
+                                    <ul class="dropdown-menu submenu">
+                                        <li><a href="" class="dropdown-item">Chairs</a></li>
+                                        <li><a href="" class="dropdown-item">Stools</a></li>
+                                        <li><a href="" class="dropdown-item">Indoor benches</a></li>
+                                        <li><a hrfe="" class="dropdown-item">Game tables</a></li>
+                                        <li><a href="" class="dropdown-item">Writing tables</a></li>
+                                        <li><a href="" class="dropdown-item">Secretary desks</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="/storagesys&units" class="dropdown-item ">Storage systems and units &raquo;</a>
+                                    <ul class="dropdown-menu  submenu">
+                                        <li><a href="" class="dropdown-item">Bookcases</a></li>
+                                        <li><a href="" class="dropdown-item">Storage walls</a></li>
+                                        <li><a href="" class="dropdown-item">TV cabinets</a></li>
+                                        <li><a hrfe="" class="dropdown-item">Highboardss</a></li>
+                                        <li><a href="" class="dropdown-item">Display Cabinets</a></li>
+                                        <li><a href="" class="dropdown-item">Hallway units</a></li>
+                                        <li><a href="" class="dropdown-item">Wall cabinets</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="" class="dropdown-item ">Sleeping area and children's bedrooms &raquo;</a>
+                                    <ul class="dropdown-menu submenu">
+                                        <li><a href="" class="dropdown-item">Beds</a></li>
+                                        <li><a href="" class="dropdown-item">Bedside tables</a></li>
+                                        <li><a href="" class="dropdown-item">Chests of drawers</a></li>
+                                        <li><a hrfe="" class="dropdown-item">Walk-in wardrobes</a></li>
+                                        <li><a hrfe="" class="dropdown-item">Headboards</a></li>
+                                        <li><a hrfe="" class="dropdown-item">Dressing tables</a></li>
 
+                                    </ul>
+                                </li>
+                                <li><a href="" class="dropdown-item ">Kids furniture Furniture components and hardware  &raquo;</a>
+                                    <ul class="dropdown-menu submenu">
+                                        <li><a href="" class="dropdown-item">Kids bedroom</a></li>
+                                        <li><a href="" class="dropdown-item">Kids bedrooms accessories</a></li>
+                                        <li><a href="" class="dropdown-item">Kids tables and chairs</a></li>
+                                        <li><a hrfe="" class="dropdown-item">Kids tableware</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="" class="dropdown-item">Furniture components and hardware  &raquo;</a>
+                                    <ul class="dropdown-menu submenu">
+                                        <li><a href="" class="dropdown-item">Drawers</a></li>
+                                        <li><a href="" class="dropdown-item">Cabinet doors</a></li>
+                                        <li><a href="" class="dropdown-item">Table tops</a></li>
+                                        <li><a hrfe="" class="dropdown-item">Table bases</a></li>
+                                        <li><a href="" class="dropdown-item">Table legs</a></li>
+                                        <li><a href="" class="dropdown-item">Trestles</a></li>
+                                        <li><a href="" class="dropdown-item">Furniture foils</a></li>
+                                        <li><a href="" class="dropdown-item">Furniture handles</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
 <div class="icons">
     <a href="#" class="fas fa-heart"></a>
     <a href="#" class="fas fa-shopping-cart"></a>
