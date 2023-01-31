@@ -39,9 +39,18 @@ Route::post('update-cart', [CartController::class, 'updateCart'])->name('cart.up
 Route::post('remove', [CartController::class, 'removeCart'])->name('cart.remove');
 Route::post('clear', [CartController::class, 'clearAllCart'])->name('cart.clear');
 /*added by ferdaous */
-Route::get('add-products' , [ProductController::class,'add']);
-Route::get('edit-products/{id}' , [ProductController::class,'edit']);
-Route::post('update-product' , [ProductController::class,'update']);
-Route::post('save-product' , [ProductController::class,'save']);
-Route::get('/list' , [ProductController::class,'index']);
-Route::get('delet-products' , [ProductController::class,'destroy']);
+// Route::get('add-products' , [ProductController::class,'add']);
+// Route::get('edit-products' , [ProductController::class,'edit']);
+// Route::post('update-product' , [ProductController::class,'update']);
+// Route::post('save-product' , [ProductController::class,'save']);
+// Route::get('/list' , [ProductController::class,'index']);
+// Route::get('delet-products' , [ProductController::class,'destroy']);
+// Route::resource('delete', 'ProductController');
+//const productsController = require("../controllers/products.controller");
+
+
+Route::get('product',[ProductController::class,'index']);
+
+Route::get('add-product/{id}',[ProductController::class,'index']);
+Route::get('edit-product/{id}',[ProductController::class,'index']);
+Route::get('delete-product/{id}',[ProductController::class,'index']);
