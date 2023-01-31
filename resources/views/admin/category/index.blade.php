@@ -28,7 +28,9 @@
                                 </td>
                                 <td>
                                     <a href="{{ url('edit-prod/'.$item->id) }}" class="btn btn-primary" >Edit</a>
-                                    <a href="{{ url('delete-category/'.$item->id}}" class="btn btn-danger" >Delete</button>
+                                    <a href=" {{ url('delete-category/'.$item->id) }}" class="btn btn-danger" >Delete</a>
+                                    
+
                                 </td>
                         @endforeach
                     </tbody>

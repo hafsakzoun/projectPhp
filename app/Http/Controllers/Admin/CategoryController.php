@@ -7,6 +7,7 @@ use App\Models\Category;
 use Illuminate\Http\Request;
 
 
+
 class CategoryController extends Controller
 {
     public function index()
@@ -58,7 +59,7 @@ class CategoryController extends Controller
             }
         }
         $category->delete();
-        return redirect('category')->with('status',"Category Deleted Successfuly");
+        return redirect('categories')->with('status',"Category Deleted Successfuly");
     }
     
     public function storagesysunits(){

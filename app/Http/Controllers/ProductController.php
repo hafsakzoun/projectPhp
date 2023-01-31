@@ -1,6 +1,6 @@
-<!-- <?php
+ <?php
 
-namespace App\Http\Controllers\ProductController;
+use App\Http\Controllers\Controller;
 
 use App\Models\Product;
 use Illuminate\Http\Request;
@@ -13,5 +13,5 @@ class ProductController extends Controller
 
         return view('Admin.product.index',compact('products'));
     }
-}  -->
+}  
 

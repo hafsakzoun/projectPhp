@@ -7,16 +7,7 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\wishlistController;
 use App\Http\Controllers\Admin\CategoryController;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
+
 Route::get('/dashboard',function(){
     return view('admin.index');
 });
@@ -55,18 +46,21 @@ Route::middleware(['auth'])->group(function () {
         }elseif(Auth::user()->role_as == '0'){
             return view('user');
         }
+
+        Route::get('/dashboard','Admin/FrontendController@index');
+        Route::get('categories','Admin/CategoryController@index');
+        Route::get('add-category','Admin/CategoryController@add');
+        Route::post('insert-category','Admin/CategoryController@insert');
+        Route::get('edit-prod/{id}', [CategoryController::class ,'edit']);
+        Route::delete('delete-category/{id}', [CategoryController::class, 'destroy'])->name('delete-category');
     });
 /* added by hafsa */
-    Route::get('/dashboard','Admin/FrontendController@index');
-    Route::get('categories','Admin/CategoryController@index');
-    Route::get('add-category','Admin/CategoryController@add');
-    Route::post('insert-category','Admin/CategoryController@insert');
-    Route::get('edit-prod/{id}', [CategoryController::class ,'edit']);
-    Route::get('delete-category/{id}',[CategoryController::class, 'destroy']);
+    
+
 
 
 });
-/*added by ferdaous*/
+/*added by ferdaous
 Route::middleware(['auth','isAdmin'])->group(function(){
     Route::get('/dashboard','Admin/ProductController@index');
     Route::get('product','admin/ProductController@index');
@@ -80,4 +74,4 @@ Route::middleware(['auth','isAdmin'])->group(function(){
     Route::get('add-product',Productcontroler::class,'add');
     Route::get('delete-product',Productcontroler::class,'delete');
 
-});
+});*/
