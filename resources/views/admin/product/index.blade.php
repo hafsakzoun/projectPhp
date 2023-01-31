@@ -1,9 +1,9 @@
-@extends('admin.admina')
-@section('title','categories')
+@extends('layouts.admin')
+@section('title','products')
 @section('content')
         <div class="card">
             <div class="card-header">   
-                <h4>Category Page</h4>
+                <h4>Product Page</h4>
                 </hr>
             </div>
             <div class="card-body">
@@ -18,17 +18,18 @@
                         </tr>
                     </thead>
                     <tbody> 
-                        @foreach($category as $item)
+                        @foreach($product as $item)
                             <tr> 
                                 <td>{{ $item->id }}</td>
                                 <td>{{ $item->name }}</td>
                                 <td>{{ $item->description }}</td>
                                 <td>
-                                    <img src="{{ asset('assets/uploads/category/'.$item->image) }}"  class="cate-image" alt="Image here"> 
+                                    <img src="{{ asset('assets/uploads/product/'.$item->image) }}"  class="cate-image" alt="Image here"> 
                                 </td>
                                 <td>
-                                    <a href="{{ url('edit-prod/'.$item->id) }}" class="btn btn-primary" >Edit</a>
-                                    <a href="{{ url('delete-category/'.$item->id}}" class="btn btn-danger" >Delete</button>
+                                    <a href="{{url('edit-product/'.$item->id)}}" class="btn btn-primary" >Edit</a>
+                                    <a href="{{url('delete-product/'.$item->id)}}" class="btn btn-primary" >Delet</a>
+                                    <button class="btn btn-danger" >Delete</button>
                                 </td>
                         @endforeach
                     </tbody>
