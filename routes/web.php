@@ -45,6 +45,11 @@ Route::post('clear', [CartController::class, 'clearAllCart'])->name('cart.clear'
 Route::get('/home',[StaticController::class , 'home']);
 Route::get('/user',[StaticController::class , 'user']);
 Route::get('/login',[StaticController::class , 'login']);
+/* changed \ by / */
+Route::get('/dashboard','Admin\FrontendController@index');
+Route::get('categories','Admin\CategoryController@index');
+Route::get('add-category','Admin\CategoryController@add');
+Route::post('insert-category','Admin\CategoryController@insert');
 Auth::routes();
 
 //Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
@@ -57,6 +62,8 @@ Route::middleware(['auth'])->group(function () {
             return view('user');
         }
     });
+
+});
 /* added by hafsa */
     Route::get('/dashboard','Admin/FrontendController@index');
     Route::get('categories','Admin/CategoryController@index');
@@ -65,8 +72,6 @@ Route::middleware(['auth'])->group(function () {
     Route::get('edit-prod/{id}', [CategoryController::class ,'edit']);
     Route::get('delete-category/{id}',[CategoryController::class, 'destroy']);
 
-
-});
 /*added by ferdaous*/
 Route::middleware(['auth','isAdmin'])->group(function(){
     Route::get('/dashboard','Admin/ProductController@index');
@@ -81,4 +86,4 @@ Route::middleware(['auth','isAdmin'])->group(function(){
     Route::get('add-product',Productcontroler::class,'add');
     Route::get('delete-product',Productcontroler::class,'delete');
 
-});
+
